@@ -29,14 +29,23 @@ public class abaixo_da_media {
 	    media = soma / n;
 
 	    System.out.printf("\nMEDIA DO VETOR = %.3f\n", media);
-	    System.out.println("ELEMENTOS ABAIXO DA MEDIA:");
+	    
+	   	    
+	    int quant = 0;
 
 	    for (int i=0; i<n; i++) {
 	        if (vetor[i] < media) {
+	        	System.out.println("ELEMENTOS ABAIXO DA MEDIA:");
 	        	System.out.printf("%.1f\n", vetor[i]);
+	        	quant= quant + 1;
 	        }
+	        
+	        
 	    }
-
+	    if (quant == 0) {
+        	System.out.println("A MÉDIA DOS " + n +" ELEMENTOS SÃO IGUAIS");
+        }
+	    
 		sc.close();
 	}
 }
