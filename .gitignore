@@ -388,3 +388,4 @@ bin/
 *.exe
 *.o
 
+/.metadata/
